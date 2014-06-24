@@ -1,0 +1,8 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+from app.models import *
+
+def index(request):
+    all=School.objects.all()
+    return render(request, 'first.html', 'all':all)
+# Create your views here.
