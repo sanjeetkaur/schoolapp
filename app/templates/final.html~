@@ -1,0 +1,14 @@
+<html>
+<head><title>Selected</title></head>
+<body>
+<p>You have selected</p>
+<ul>
+{% for i in info %}
+   <li>{{i}}</li>
+{% endfor}
+</ul>
+{% if error %}
+<p>you have not selected anything please select atleast one field</p>
+{% endif %}
+</body>
+</html>

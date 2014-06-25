@@ -1,8 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from app.models import *
 
 def index(request):
-    all=School.objects.all()
-    return render(request, 'first.html', 'all':all)
-# Create your views here.
+    return render(request, 'first.html')
+def diplay (request):
+    if 'info' in  request.GET:
+        info = request.GET.getlist('info')
+        return render(request, 'final.html', { 'info': info })
+    else:
+        a = 'nothing selected'
+        return render(request, 'final.html', {'error':True, 'else':a})

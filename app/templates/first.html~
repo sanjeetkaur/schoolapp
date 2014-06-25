@@ -1,0 +1,16 @@
+<html>
+<head><title>selection</title></head>
+<body>
+<h1 style="text-align:centre;">Welcome to Student Section</h1>
+<p>Select the options that you want to enquire for</p>
+<form action= '/app/display' method= "get">
+<input type="checkbox" name="info">name<br>
+<input type="checkbox" name="info">roll_no.<br>
+<input type="checkbox" name="info">branch<br>
+<input type="checkbox" name="info">session<br>
+<input type="checkbox" name="info">marks<br>
+<input type="checkbox" name="info">backlog<br>
+<input type=Submit value="Submit">
+</form>
+</body>
+</html>

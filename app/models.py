@@ -9,4 +9,4 @@ class list(models.Model):
     marks = models.IntegerField(max_length=4)
     backlog = models.CharField(max_length=10)
     def __unicode__(self):
-         return self.roll_no
+         return self.name
